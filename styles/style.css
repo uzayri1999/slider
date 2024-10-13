@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  height: 100vh;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 442px 679px;
+  grid-template-rows: 24px 390px 47px;
+  row-gap: 45px;
+  column-gap: 50px;
+  grid-template-areas:
+    ". nav-top"
+    "section image-block"
+    "nav-bottom image-block";
+}
+
+.nav-top {
+  grid-area: nav-top;
+  display: flex;
+  justify-content: space-between;
+  width: 623px;
+}
+
+.section {
+  grid-area: section;
+  color: #FFFFFF;
+}
+
+.section h2, h3 {
+  text-transform: uppercase;
+  color: #E3B873;
+  font-family: Yeseva One;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  width: 253px;
+}
+
+.title_text {
+  font-size: 27px;
+  line-height: 38px;
+  height: 66px;
+  margin: 0 auto;
+}
+
+.title_line {
+  display: block;
+  position: absolute;
+  width: 92px;
+  height: 10px;
+  right: 0;
+  bottom: 0;
+  border-top: solid 1.5px #E3B873;
+}
+
+.section h3 {
+  margin: 0 auto 9px;
+}
+
+.info-block__text {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 27px;
+  margin: 0 auto;
+}
+
+.descrip {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 27px;
+  margin: 34px auto 42px;
+}
+.info-block {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 29px;
+  row-gap: 34px;
+}
+
+.info-block__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.section span {
+  font-family: Nunito Sans;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.image-block {
+  grid-area: image-block;
+  width: 679px;
+  height: 482px;
+}
+
+.image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.nav-bottom {
+  grid-area: nav-bottom;
+}
+
+.nav-top_link {
+  text-transform: uppercase;
+  list-style-type: none;
+  font-family: Yeseva One;
+  color: #FFFFFF4D;
+  cursor: pointer;
+}
+
+.link_active {
+  color: #E3B873;
+  border-bottom: solid 1px #E3B873;
+}
+
+.nav-bottom {
+  position: relative;
+  display: flex;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.arrow-left {
+  left: 1px;
+}
+.arrow-right {
+  left: 165px;
+}
+.point {
+  position: absolute;
+  bottom: 2px;
+  cursor: pointer;
+}
+.point-1 {
+  left: 71px;
+}
+.point-2 {
+  left: 98px;
+}
+.point-3 {
+  left: 125px;
+}

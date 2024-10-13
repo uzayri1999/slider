@@ -3,21 +3,68 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>slider_test</title>
-   <link rel="stylesheet" href="style.css">
+   <title>slider</title>
+   <link rel="stylesheet" href="styles/font.css">
+   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  <main>
-    <section class="slider">
-      <div class="slider__images"></div>
-      <div class="slider__arrows">
-        <div class="slider__arrow left">&#9668;</div>
-        <div class="slider__arrow right">&#9658;</div>
+<body class="body">
+  <main class="main">
+    <nav class="nav-top">
+      <span id="btn-rostovAdmiral" class="nav-top_link link_active">Rostov-on-Don, Admiral</span>
+      <span id="btn-sochiThieves" class="nav-top_link">Sochi Thieves</span>
+      <span id="btn-rostovPatriotic" class="nav-top_link">Rostov-on-Don Patriotic</span>
+    </nav>
+    <section class="section">
+      <div class="title">
+        <h2 class="title_text">Completed projects</h2>
+        <span class="title_line"></span>
       </div>
-      <div class="slider__dots"></div>
+      <p class="descrip">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+        market we have made happy more than 1000 families</p>
+      <div class="info-block">
+        <div class="info-block_city">
+          <h3 class="info-block__title">city:</h3>
+          <p class="info-block__text">
+            <span id="city-first" class="info-block_city__text"></span>
+            <span id="city-second" class="info-block_city__text"></span>
+          </p>
+        </div>
+        <div class="info-block_apartment-area">
+          <h3 class="info-block__title">apartment area:</h3>
+          <p id="apartment-area" class="info-block__text"></p>
+        </div>
+        <div class="info-block_repair-time">
+          <h3 class="info-block__title">Repair time:</h3>
+          <p id="repair-time" class="info-block__text"></p>
+        </div>
+        <div class="info-block_repair-cost">
+          <h3 class="info-block__title">Repair Cost:</h3>
+          <p id="repair-cost" class="info-block__text"></p>
+        </div>
+      </div>
     </section>
+    <div class="image-block">
+      <img id="image" class="image" src="" alt="room's photo">
+    </div>
+    <nav class="nav-bottom">
+      <span id="arrow-left" class="arrow arrow-left">
+        <img src="images/arrow_left.svg" alt="arrow left">
+      </span>
+      <span class="point point-1 point_active">
+        <img src="" alt="point">
+      </span>
+      <span class="point point-2">
+        <img src="" alt="point">
+      </span>
+      <span class="point point-3">
+        <img src="" alt="point">
+      </span>
+      <span id="arrow-right" class="arrow arrow-right">
+        <img src="images/arrow_right.svg" alt="arrow right">
+      </span>
+    </nav>
   </main>
     
-  <script src="script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
